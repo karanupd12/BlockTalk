@@ -1,0 +1,21 @@
+
+.Error{
+    position: fixed;
+    inset: 30% 30% 45% 30%;
+    z-index: 1111111111;
+    margin: 0 auto;
+    background-color: #292f3f;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    border-radius: 50px;
+    color: red;
+    background: rgb(245, 227, 227);
+    font-family:monospace
+}
+
+@media only screen and (max-width: 35em) {
+    .Error{
+        inset: 10% 10% 55% 10%;
+    }
+}

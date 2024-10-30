@@ -1,0 +1,119 @@
+.Model{
+    width: 85%;
+    margin: 1rem auto;
+}
+
+.Model_box{
+    display: grid;
+    grid-template-columns: 1.4fr 1.3fr;
+    padding-top: 4rem;
+    align-items: center;
+}
+
+.Model_box_left img{
+    border-radius: 50%;
+    margin-top: 20fr;
+}
+
+.Model_box_right h1{
+    font-size: 3rem;
+    color: white; 
+}
+
+.Model_box_right h1 span{
+    display: block; 
+    font-size: 5rem;
+    color: #bf2ecc;
+}
+
+.Model_box_right small{
+    font-size: 1.2rem;
+    color: #bf2ecc; 
+}
+
+.Model_box_right_name_info{
+    display: flex;
+    align-items: center;
+    margin-block: 1rem;
+    gap: 1rem;
+    background-color: rgba(26, 10, 38, 0.968);
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.Model_box_right_name_info input{
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #e88f5f;
+}
+
+.Model_box_right_name_btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.Model_box_right_name_btn button{
+    background-color: rgba(26, 10, 38, 0.968);
+    outline: none;
+    border: none;
+    color: #f4e9dd;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1rem;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 35em){
+    .Model{
+        position: absolute;
+        inset: 0 0 -70% 0;
+        text-align: center;
+    }
+
+    .Model_box{
+        grid-template-columns: 1fr;
+    }    
+
+    .Model_box_left img {
+        max-width: 150px; 
+        max-height: 150px; 
+    }
+      
+
+    .Model_box_right h1{
+        font-size: 1rem;
+        line-height: 1.5;
+        padding-top: 1rem;
+    }
+
+    .Model_box_right h1 span{
+        font-size: 2rem;
+    }
+
+    .Model_box_right small{
+        font-size: .8rem;
+    }
+
+    .Model_box_right p{
+        display: none; 
+    }
+
+    .Model_box_right_name_btn{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        z-index: 11111;
+    }
+
+}
+
